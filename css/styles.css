@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 0 20px; 
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.logo {
+    width: 100px;
+    margin-right: -85px;
+}
+
+.lista {
+    display: flex;
+    gap: 40px;
+    font-size: 20px;
+}
+
+.lista li {
+    list-style: none;
+}
+
+.lista a {
+    text-decoration: none;
+    color: black;
+}
+
+.enviar {
+    width: 60px;
+    height: 30px;
+    margin-left: -260px;
+
+}
+
+.titulo {
+    text-align: center;
+    font-size: 70px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+}
+
+.grid-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+.linea{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    
+}
+
+.pizza {
+    width: 550px;
+    height: auto;
+}
+.titulouno{
+    font-size: 30px;
+
+}
+.texto-uno{
+    font-size: 20px;
+    margin-top: 5px;
+}
+.comida{
+    margin-bottom: 20px;
+}
+
+.vermas {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        display: inline-block; 
+        margin-top: 15px; 
+    }
+      
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(12, 68, 12);
+    padding: 20px 0;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    height: 30px;
+}
+
+.banda {
+    color: white;
+}
