@@ -111,8 +111,8 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 15px;
 }
-
 
 .access form {
     display: flex;
@@ -124,6 +124,32 @@ footer {
     margin: 10px 0;
 }
 .access button {
+    background-color: darkgreen;
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid darkgreen;
+    cursor: pointer;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.login form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.login input, .login button{
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.login button {
     background-color: darkgreen;
     color: #fff;
     text-transform: uppercase;
