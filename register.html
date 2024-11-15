@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    
+    <main class="access">
+        <h2>Regístrate</h2>
+        <form id="registerForm" action="login.html">  
+            <input type="email" id="email" placeholder="Email">
+            <span id="emailError" style="color: red; font-size: 0.9em;"></span>
+            <input type="password" id="password" placeholder="Contraseña">
+            <span id="passwordError" style="color: red; font-size: 0.9em;"></span>
+            <label>
+                <input class="terminos" type="checkbox" name="terminos" value="Aceptado">
+                Términos y Condiciones
+            </label>
+            <a href="./login.html">Ya tengo cuenta</a>
+            <button class="boton" type="submit">Registrarse</button>
+        </form>
+    </main>
+    <script src="./js/register.js"></script>
 </body>
 </html>
