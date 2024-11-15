@@ -5,23 +5,34 @@ const terminos = document.querySelector(".terminos");
 const bot = document.querySelector(".boton")
 
 form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    let errors = false
+
     const email = document.querySelector('#email').value;
     if (email === '') {
         emailError.innerText = "Por favor complete el campo";
-        event.preventDefault();
-    } 
+        errors = true
+    } else{
+        errors = false
+    }
     const password = document.querySelector('#password').value;
     if (password === '') {
         passwordError.innerText = "Por favor complete el campo";
-        event.preventDefault();
-    } 
-});
-bot.addEventListener("click", function(event){
-    if (!terminos){
-        alert("Tenes que aceptar condiciones")
-        event.preventDefault();
+        errors = true
+    } else{
+        errors = false
     }
-})
+
+    if(!terminos.checked){
+        alert("Tenes que aceptar condiciones");
+        errors = true
+    } else{
+        errors = false
+    }
+
+    if (!errors) this.submit()
+});
 
 
 
