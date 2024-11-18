@@ -5,10 +5,12 @@
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto; 
     padding: 0;
 }
+
+
 
 header {
 
@@ -63,7 +65,7 @@ header {
 }
 
 .enviar {
-    align-self: flex-end; 
+    align-items: flex-end; 
     padding: 4px;
 }
 
@@ -77,47 +79,23 @@ header {
 .grid-contenedor {
     display: flex;
     flex-wrap: wrap;
-
     justify-content: space-between;
 }
-
-.linea {
+.segundocontenedor{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
 }
-
-.pizza {
-    width: 100%;
-    height: auto;
-    align-items: center;
-
-}
-.titulouno {
-    font-size: 30px;
-    
-}
-
-.texto-uno {
-    font-size: 20px;
-    margin-top: 5px;
-}
-
-.comida {
-    margin-bottom: 20px;
-    width: 18%;
-    border: 1px solid #000;
-
-}
-
-.vermas {
+.carga {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
     background-color: black;
-    padding: 10px;
-    display: inline-block; 
-    margin-top: 15px; 
+    width: 120px;
+    margin: 0 auto; 
+    display: block; 
 }
-
-.vermas a {
+.carga a{
     text-decoration: none;
     color: white;
 }
@@ -198,4 +176,15 @@ footer {
 .tengoCuenta{
     text-decoration: none;
     color: black;
+}
+.seccion-Receta{
+    align-items: center;
+    border: solid black 4px;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 35px;
+    height: 100%;
+}
+.foto-Receta{
+    width: 100%;
 }
