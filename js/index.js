@@ -49,7 +49,7 @@ fetch('https://dummyjson.com/recipes')
         }
 
         let newContainer = document.querySelector(".segundocontenedor");
-        let boton = document.querySelector(".carga"); 
+        let boton = document.querySelector(".carga "); 
         boton.addEventListener("click", function (event) {
             event.preventDefault(); 
             let recetas = "";
