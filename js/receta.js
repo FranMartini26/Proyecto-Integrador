@@ -11,10 +11,8 @@ fetch(`https://dummyjson.com/recipes/${RecetaId}`)
         document.querySelector(".Name-Receta").innerText = receta.name;
         document.querySelector(".Instrucciones-Receta").innerText += receta.instructions;
         document.querySelector(".Coccion-Receta").innerText += receta.cookTimeMinutes;
-        document.querySelector(".categorias-Recet").innerHTML += receta.tags;
-                                // estilos
- 
-        document.querySelector(".foto-Receta").style.width = "200px"
+        document.querySelector(".categorias-Receta").innerHTML += receta.tags;
+  
     })
     .catch(function (e) {
         console.log("Error al obtener la receta:", e);

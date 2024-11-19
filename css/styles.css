@@ -86,21 +86,18 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.carga {
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    background-color: black;
-    width: 120px;
-    margin: 0 auto; 
-    display: block; 
-}
-.carga a{
-    text-decoration: none;
-    color: white;
-}
-
-
+    .carga {
+        font-size: 35px;
+        font-weight: bold;
+        text-align: center;
+        background-color: black;
+        width: 150px;
+        height: 80px;
+        margin: 0 auto; 
+        color: white;
+        display: flex;
+        justify-content: center;
+    }
 footer {
 
     display: flex;
