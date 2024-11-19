@@ -1,39 +1,28 @@
-let queryString = location.search;
-let queryStringObj = new URLSearchParams(queryString);
-let categorias = queryStringObj.get('tags');  
-
-
-fetch (`https://dummyjson.com/recipes/${categorias}`)
+fetch('https://dummyjson.com/recipes')
     .then(function (response) {
         return response.json();
     })
-    .then(function(data){
-        let cat = document.querySelector(".grid-c")
-        let tags = "";
-        let data_categorias = data.recipes;
+    .then(function (data) {
+        let grido = document.querySelector(".grid-c");
+        let contenedores = "";
+        let dataTotal = data;
 
-
-        for (let i = 0; i < data_categorias.length; i++){
-            let y = data_categorias[i];
-            for (let j = 0; j < y.tags.length; j++) {
-                let tag = y.tags[j];
-                tags += `
-                    <article class="fran">
-                        <p class="fran2">${tag}</p>
+        for (let i = 0; i < dataTotal.recipes.length; i++) {
+            let tageamos = dataTotal.recipes[i];
+            for (let j = 0; j < tageamos.tags.length; j++) {
+                contenedores += `
+                    <article class="articulo">
+                        <p class="franmartini">${tageamos.tags[j]}</p>
                     </article>
                 `;
+            }
         }
-    }
-        cat.innerHTML = tags
-})
-.catch(function (error) {
-    console.error("Error:", error);
-});
+        grido.innerHTML = contenedores;
 
-
-
-
-
+    })
+    .catch(function (error) {
+        console.log('El error es: ' + error);
+    });
 
 
 
