@@ -50,8 +50,15 @@ fetch('https://dummyjson.com/recipes')
             articles[i].style.justifyContent = "center"; 
             articles[i].style.alignItems = "center";    
             articles[i].style.textAlign = "center";
+            articles[i].style.backgroundColor = "darkgreen";
+            articles[i].style.color = "white";
+
+            let blanco = articles[i].querySelector("a"); 
+            if (blanco) {
+                blanco.style.color = "white"; 
+                blanco.style.textDecoration = "none";
         }
-    })
+    }})
     .catch(function (error) {
         console.log('El error es: ' + error);
     });
