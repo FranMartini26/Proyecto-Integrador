@@ -14,7 +14,7 @@ fetch(`https://dummyjson.com/recipes/search?q=${searchQuery}`)
             let recipe = data.recipes[0]; 
 
             let htmlContent = `
-                <article>
+                <article class = "fran11">
                     <img src="${recipe.image}" alt="${recipe.name}" />
                     <p>Name: ${recipe.name}</p>
                     <p><a href="receta.html?id=${recipe.id}" class="link-detalle">Link para ir al detalle</a></p>
@@ -22,6 +22,16 @@ fetch(`https://dummyjson.com/recipes/search?q=${searchQuery}`)
             `;
 
             resultados.innerHTML = htmlContent;
+
+            let article = document.querySelector('.fran11');
+            let img = article.querySelector('img');
+            img.style.width = "50%";
+            resultados.style.display = "flex";
+            resultados.style.justifyContent = "center"; 
+            resultados.style.alignItems = "center"; 
+            resultados.style.height = "100vh"; 
+            resultados.style.textAlign = "center";
+
         } else {
             resultados.innerHTML = `<p>No se encontraron recetas con el nombre "${searchQuery}".</p>`;
         }
