@@ -21,7 +21,7 @@ fetch(`https://dummyjson.com/recipes/search?q=${searchQuery}`)
                 <article class = "fran11">
                     <img src="${recipe.image}" alt="${recipe.name}" />
                     <p>Name: ${recipe.name}</p>
-                    <p><a href="receta.html?id=${recipe.id}" class="link-detalle">Link para ir al detalle</a></p>
+                    <p><a href="receta.html?id=${recipe.id}" class="link-detalle"> Link para ir al detalle</a></p>
                 </article>
             `;
 
@@ -42,6 +42,10 @@ fetch(`https://dummyjson.com/recipes/search?q=${searchQuery}`)
             resultados.style.alignItems = "center"
             resultados.style.flexWrap = "wrap"
             resultados.style.justifyContent = "space-around"
+
+            let links = document.querySelector('.link-detalle')
+            links.style.textDecoration = "none"
+            links.style.color = "green"
 
         } else {
             resultados.innerHTML = `<p>No se encontraron recetas con el nombre "${searchQuery}".</p>`;

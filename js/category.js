@@ -23,7 +23,7 @@ fetch(`https://dummyjson.com/recipes/tag/${tag}`)
                             <img src= ${receta.image} alt=''>
                             <p>Título: ${receta.name} </p>
                             <p>Nivel de dificultad: ${receta.difficulty} </p>
-                            <p> <a href=""> Link para el detalle </a> </p>
+                            <p> <a href="receta.html?id=${receta.id}" class="link-detalle"> Link para ir al detalle </a> </p>
                         </article>
                              `
             recetas += article
@@ -58,6 +58,13 @@ fetch(`https://dummyjson.com/recipes/tag/${tag}`)
         nombre.style.textAlign = "center"
         nombre.style.paddingTop = "10px"
         nombre.style.fontSize = "35px"
+
+        let detalle = document.querySelectorAll(".link-detalle")
+        for(i = 0; i < detalle.length; i++){
+        let det = detalle[i]
+        det.style.textDecoration = "none"
+        det.style.color = "green"
+        }
 
     })
     .catch(function(error){

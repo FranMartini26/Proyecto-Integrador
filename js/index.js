@@ -45,7 +45,7 @@ fetch('https://dummyjson.com/recipes')
         let links = document.querySelectorAll(".link-detalle");
         for (let i = 0; i < links.length; i++) {
             links[i].style.textDecoration = "none";
-            links[i].style.color = "black";
+            links[i].style.color = "green";
         }
 
         let newContainer = document.querySelector(".segundocontenedor");
