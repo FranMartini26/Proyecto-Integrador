@@ -2,13 +2,17 @@ let resultados = document.querySelector(".search-results");
 let queryString = location.search; 
 let queryStringObj = new URLSearchParams(queryString);
 
-let searchQuery = queryStringObj.get('comentariosusuario');
+let searchQuery = queryStringObj.get('q');
 
 fetch(`https://dummyjson.com/recipes/search?q=${searchQuery}`)
 .then(function (response) {
     return response.json(); 
 })
 .then(function (data) {
+    let nombre = document.querySelector(".nombre")
+    nombre.innerText = `Resultados de busqueda para: ${searchQuery}`
+    nombre.style.fontSize = "30px"
+
     if (data.recipes) {
         if (data.recipes.length > 0) {
             let recipe = data.recipes[0]; 
@@ -24,13 +28,20 @@ fetch(`https://dummyjson.com/recipes/search?q=${searchQuery}`)
             resultados.innerHTML = htmlContent;
 
             let article = document.querySelector('.fran11');
-            let img = article.querySelector('img');
-            img.style.width = "50%";
-            resultados.style.display = "flex";
-            resultados.style.justifyContent = "center"; 
-            resultados.style.alignItems = "center"; 
-            resultados.style.height = "100vh"; 
-            resultados.style.textAlign = "center";
+            article.style.border = "solid lightgrey"
+            article.style.padding = "7px"
+            article.style.margin = "25px"
+            article.style.borderRadius = "7px"
+
+            let img = article.querySelector('.search-results img');
+            img.style.width = "300px"
+            img.style.width = "300px"
+            img.style.borderRadius = "5px"
+
+            resultados.style.display = "flex"
+            resultados.style.alignItems = "center"
+            resultados.style.flexWrap = "wrap"
+            resultados.style.justifyContent = "space-around"
 
         } else {
             resultados.innerHTML = `<p>No se encontraron recetas con el nombre "${searchQuery}".</p>`;
