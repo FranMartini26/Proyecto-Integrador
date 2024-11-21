@@ -31,7 +31,7 @@ fetch('https://dummyjson.com/recipes')
         for (let i = 0; i < tagsUnicos.length; i++) {
             contenedores += `
                 <article class="articulo">
-                    <a href="category.html">${tagsUnicos[i]}</a>
+                    <a href="category.html?tag=${tagsUnicos[i]}">${tagsUnicos[i]}</a>
                 </article>
             `;
         }
