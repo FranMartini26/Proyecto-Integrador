@@ -39,8 +39,7 @@ fetch(`https://dummyjson.com/recipes/tag/${tag}`)
         let imagen = document.querySelectorAll(".grid-contenedor img")
         for(let i = 0; i < imagen.length; i++){
             let img = imagen[i]
-            img.style.width = "300px"
-            img.style.width = "300px"
+            img.style.width = "450px"
             img.style.borderRadius = "5px"
         }
 

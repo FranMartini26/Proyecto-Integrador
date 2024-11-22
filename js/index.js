@@ -23,12 +23,14 @@ fetch('https://dummyjson.com/recipes')
         let articles = document.querySelectorAll(".articulo");
         for (let i = 0; i < articles.length; i++) {
             articles[i].style.width = "18%";
-            articles[i].style.margin = "10px";
-            articles[i].style.border = "2px solid black";
             articles[i].style.display = "flex";
             articles[i].style.flexDirection = "column";
             articles[i].style.justifyContent = "space-between";
             articles[i].style.minHeight = "300px";
+            articles[i].style.border = "solid lightgrey"
+            articles[i].style.padding = "7px"
+            articles[i].style.margin = "25px"
+            articles[i].style.borderRadius = "7px"
         }
 
         let images = document.querySelectorAll(".articulo img");
@@ -69,12 +71,14 @@ fetch('https://dummyjson.com/recipes')
             let NuevoArticle = document.querySelectorAll(".NuevoArticulo");
             for (let i = 0; i < NuevoArticle.length; i++) {
                 NuevoArticle[i].style.width = "18%";
-                NuevoArticle[i].style.margin = "10px";
-                NuevoArticle[i].style.border = "2px solid black";
                 NuevoArticle[i].style.display = "flex";
                 NuevoArticle[i].style.flexDirection = "column";
                 NuevoArticle[i].style.justifyContent = "space-between";
                 NuevoArticle[i].style.minHeight = "300px";
+                NuevoArticle[i].style.border = "solid lightgrey"
+                NuevoArticle[i].style.padding = "7px"
+                NuevoArticle[i].style.margin = "25px"
+                NuevoArticle[i].style.borderRadius = "7px"
             }
 
             let NuevaImagen = document.querySelectorAll(".NuevaImagen");

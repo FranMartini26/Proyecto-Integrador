@@ -34,8 +34,7 @@ fetch(`https://dummyjson.com/recipes/search?q=${searchQuery}`)
             article.style.borderRadius = "7px"
 
             let img = article.querySelector('.search-results img');
-            img.style.width = "300px"
-            img.style.width = "300px"
+            img.style.width = "450px"
             img.style.borderRadius = "5px"
 
             resultados.style.display = "flex"
