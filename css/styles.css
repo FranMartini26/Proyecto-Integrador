@@ -106,8 +106,8 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color:#fabfb7;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 55px;
     height: 30px;
     margin-top: 32px
 }
@@ -189,10 +189,18 @@ header {
     text-decoration: none;
     color: black;
 }
+.Name-Receta{
+
+    margin-left: 70px;
+}
 .seccion-Receta{
     align-items: center;
     width: 400px;
-    height: 100%;
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
     border: solid lightgrey;
     padding: 7px;
     margin: 0 auto;
@@ -207,4 +215,63 @@ header {
     width: 100%;
     
 }
+@media screen and (max-width: 430px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 130px;
+        padding: 0; 
+    
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+        text-align: center;
+        width: 20%;
+    }
+    .comentario{
+        height: 20px;
+    }
+    .enviar{
+        height: 20px;
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        margin-right: 20px;
+
+    }
+
+    .formu {
+        width: 40%;; 
+        margin-top: 97px; 
+    }
+
+
+    .lista {
+    
+        gap: 0px;
+        font-size: 15px;
+        margin-top: 100px;
+    
+    }
+    .seccion-Receta{
+        height: 720px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+  
+}
+
+
+
+
+
+
+
+
+
 
