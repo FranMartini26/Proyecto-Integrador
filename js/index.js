@@ -22,7 +22,7 @@ fetch('https://dummyjson.com/recipes')
 
         let articles = document.querySelectorAll(".articulo");
         for (let i = 0; i < articles.length; i++) {
-            articles[i].style.width = "18%";
+            articles[i].style.width = "16%";
             articles[i].style.display = "flex";
             articles[i].style.flexDirection = "column";
             articles[i].style.justifyContent = "space-between";
@@ -70,7 +70,7 @@ fetch('https://dummyjson.com/recipes')
 
             let NuevoArticle = document.querySelectorAll(".NuevoArticulo");
             for (let i = 0; i < NuevoArticle.length; i++) {
-                NuevoArticle[i].style.width = "18%";
+                NuevoArticle[i].style.width = "16%";
                 NuevoArticle[i].style.display = "flex";
                 NuevoArticle[i].style.flexDirection = "column";
                 NuevoArticle[i].style.justifyContent = "space-between";
