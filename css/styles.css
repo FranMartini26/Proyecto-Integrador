@@ -263,7 +263,15 @@ header {
         justify-content: space-between;
         align-items: flex-start;
     }
-  
+    .grid-contenedor, .segundocontenedor {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .articulo, .NuevoArticulo {
+        width: 58%; /* Dos artículos por fila con un pequeño espacio */
+    }
 }
 
 
