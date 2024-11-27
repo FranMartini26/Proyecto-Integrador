@@ -236,10 +236,10 @@ header {
                 display: flex;
                 justify-content: space-between; 
                 flex-direction: row; 
-                height: 90px;
+                height: 80px;
             }
             .formu{
-                margin-top: 65px;
+                margin-top: 60px;
                 margin-right: 0px;
             }
             .comentario{
@@ -255,7 +255,8 @@ header {
         
             .logo {
                 width: 90px; 
-                margin-top: 20px;
+                margin-top: 15px;
+                margin-left: 10px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -265,9 +266,9 @@ header {
         
             .lista {
                 display: flex;
-                gap: 7px; 
+                gap: 9px; 
                 font-size: 16px; 
-                margin-top: 75px;
+                margin-top: 70px;
         
             }
             .titulo{
@@ -280,7 +281,7 @@ header {
                 height: 830px;
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
+                justify-content: space-around;
                 align-items: flex-start;
             }
             .container{
