@@ -23,6 +23,7 @@ fetch('https://dummyjson.com/recipes')
         let images = document.querySelectorAll(".articulo img");
         for (let i = 0; i < images.length; i++) {
             images[i].style.width = "100%";
+            images[i].style.borderRadius = "5px"
         }
 
         let nombres = document.querySelectorAll(".nombre");
@@ -58,6 +59,7 @@ fetch('https://dummyjson.com/recipes')
             let NuevaImagen = document.querySelectorAll(".NuevaImagen");
             for (let i = 0; i < NuevaImagen.length; i++) {
                 NuevaImagen[i].style.width = "100%";
+                NuevaImagen[i].style.borderRadius = "5px"
             }
 
             let Nuevosnombres = document.querySelectorAll(".NuevoNombre");
@@ -69,7 +71,7 @@ fetch('https://dummyjson.com/recipes')
             let Nlinks = document.querySelectorAll(".Nuevolink-detalle");
             for (let i = 0; i < Nlinks.length; i++) {
                 Nlinks[i].style.textDecoration = "none";
-                Nlinks[i].style.color = "black";
+                Nlinks[i].style.color = "green";
             }
 
             boton.style.display = "none"; 
