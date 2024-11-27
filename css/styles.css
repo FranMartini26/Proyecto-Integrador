@@ -266,28 +266,32 @@ header {
                 font-size: 14px; 
                 margin-top: 85px;
             }
-        }
-           
-           
-        .seccion-Receta{
-            height: 720px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: flex-start;
-        }
-        .container{
-            max-width: 430px;
-        }
-        .grid-contenedor, .segundocontenedor {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            margin: 0;
-            padding: 0;
-        }
-        .articulo, .NuevoArticulo {
-            width: 36%; 
+            .titulo{
+                font-size: 50px;
+                display: flex;
+                justify-content: center;
+                margin: 0 auto;
+            }
+            .seccion-Receta{
+                height: 750px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+            .container{
+                max-width: 430px;
+            }
+            .grid-contenedor, .segundocontenedor {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                margin: 0;
+                padding: 0;
+            }
+            .articulo, .NuevoArticulo {
+                width: 36%; 
+            }
         }
 
         
