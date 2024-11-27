@@ -3,7 +3,7 @@ fetch('https://dummyjson.com/recipes')
         return response.json();
     })
     .then(function (data) {
-        let grido = document.querySelector(".grid-contenedor");
+        let grido = document.querySelector(".grid-contt");
         let contenedores = "";
         let dataTotal = data;
 
@@ -50,13 +50,23 @@ fetch('https://dummyjson.com/recipes')
             articles[i].style.justifyContent = "center"; 
             articles[i].style.alignItems = "center";    
             articles[i].style.textAlign = "center";
-            articles[i].style.backgroundColor = "darkgreen";
-            articles[i].style.color = "white";
+            articles[i].style.backgroundColor = "beige";
+            articles[i].style.color = "black";
+            articles[i].style.borderRadius = "50%";
 
             let blanco = articles[i].querySelector("a"); 
             if (blanco) {
-                blanco.style.color = "white"; 
+                blanco.style.color = "black"; 
                 blanco.style.textDecoration = "none";
+            
+                articles[i].addEventListener("mouseover", function() {
+                    articles[i].style.backgroundColor = "lightgreen"; 
+                });
+            
+                
+                articles[i].addEventListener("mouseout", function() {
+                    articles[i].style.backgroundColor = "beige"; 
+                });
         }
     }})
     .catch(function (error) {

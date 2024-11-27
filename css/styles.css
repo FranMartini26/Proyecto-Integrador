@@ -81,6 +81,11 @@ header {
     margin-right: 60px;
 }
 
+.grid-contt{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 .grid-contenedor {
     display: flex;
@@ -285,7 +290,6 @@ header {
                 flex-direction: column;
                 justify-content: space-around;
                 align-items: flex-start;
-                /* agrandar tamaño de textos en receta */
             }
             .container{
                 max-width: 630px;
@@ -298,6 +302,15 @@ header {
             }
             .articulo, .NuevoArticulo {
                 width: 38%; 
+            }
+            .grid-contt{
+                height: 80vh;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            .search-results{
+                height: 85vh;
             }
         }
 
