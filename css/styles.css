@@ -15,12 +15,14 @@ body{
 
 
 header {
-    margin: 0 auto;
+    max-width: 1600px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 10px;
     background-color: #b0f2c2;
+    padding-right: 10px;
+    padding-left: 10px;
 
 }
 
@@ -34,14 +36,12 @@ header {
     display: flex;
     gap: 40px;
     font-size: 20px;
-    justify-content: flex-end;
     margin-top: 50px;
 }
 
 .lista li {
     list-style: none;
     font-weight: bold;
-    margin-right: 15px;
 }
 
 .lista a {
@@ -53,7 +53,6 @@ header {
     display: flex;
     flex-direction: row; 
     align-items: center; 
-    justify-content: flex-start;
     gap: 10px; 
     margin-top: 50px;
 }
@@ -65,21 +64,17 @@ header {
     font-size: 14px; 
 }
 
-.comentario{
-    margin-left: 10px;
-}
 
 .enviar {
-    align-items: flex-end; 
+    margin-top: 4px; 
     padding: 4px;
+    
 }
 
 .titulo {
     font-size: 70px;
     margin-bottom: 30px;
     display: flex;
-    align-items: center;
-    margin: 0 auto;
     justify-content: center;
     margin-right: 60px;
 }
@@ -236,56 +231,67 @@ header {
     
 }
 @media (max-width: 430px) {
-        header {
+            header {
+                max-width: 100%;
+                display: flex;
+                justify-content: space-between; 
+                flex-direction: row; 
+                height: 120px;
+            }
+            .formu{
+                margin-top: 85px;
+                margin-right: 0px;
+            }
+            .comentario{
+                width: 90px;
+                height: 25px;
+            }
+            .enviar{
+                display: flex;
+                align-items: center;
+                height: 20px;
+                margin-left: -4px;
+            }
+        
+            .logo {
+                margin-left: 0px;
+                margin-right: 0px;
+                width: 80px; 
+                margin-bottom: 40px;
+            }
+        
+            .lista {
+                display: flex;
+                gap: 5px; 
+                font-size: 14px; 
+                margin-top: 85px;
+            }
+        }
+           
+           
+        .seccion-Receta{
+            height: 720px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .container{
+            max-width: 430px;
+        }
+        .grid-contenedor, .segundocontenedor {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
-            height: 130px; 
-            padding: 20px 0;   
+            justify-content: space-around;
+            margin: 0;
+            padding: 0;
         }
-        .formu{
-            margin-top: 80px;
-            width: 150px;
- 
-        }
-        .comentario{
-            height: 25px;
- 
-        }
-        .enviar{
-            height: 25px;
-        }
-        .logo{
-            width: 20%;
-   
-        }
-        .lista{
-            gap: 0px;
-            font-size: 16px;
-            margin-right: 80px;
+        .articulo, .NuevoArticulo {
+            width: 36%; 
         }
 
-    }    
-    .seccion-Receta{
-        height: 720px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-    .container{
-        max-width: 430px;
-    }
-    .grid-contenedor, .segundocontenedor {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin: 0;
-        padding: 0;
-    }
-    .articulo, .NuevoArticulo {
-        width: 36%; 
-    }
+        
+   
   
 
 
