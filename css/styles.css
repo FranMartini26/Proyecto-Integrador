@@ -230,20 +230,20 @@ header {
     width: 100%;
     
 }
-@media (max-width: 430px) {
+@media (max-width: 640px) {
             header {
                 max-width: 100%;
                 display: flex;
                 justify-content: space-between; 
                 flex-direction: row; 
-                height: 120px;
+                height: 90px;
             }
             .formu{
-                margin-top: 85px;
+                margin-top: 65px;
                 margin-right: 0px;
             }
             .comentario{
-                width: 90px;
+                width: 130px;
                 height: 25px;
             }
             .enviar{
@@ -254,17 +254,21 @@ header {
             }
         
             .logo {
-                margin-left: 0px;
-                margin-right: 0px;
-                width: 80px; 
-                margin-bottom: 40px;
+                width: 90px; 
+                margin-top: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+    
             }
         
             .lista {
                 display: flex;
-                gap: 5px; 
-                font-size: 14px; 
-                margin-top: 85px;
+                gap: 7px; 
+                font-size: 16px; 
+                margin-top: 75px;
+        
             }
             .titulo{
                 font-size: 50px;
@@ -273,24 +277,23 @@ header {
                 margin: 0 auto;
             }
             .seccion-Receta{
-                height: 750px;
+                height: 830px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: flex-start;
             }
             .container{
-                max-width: 430px;
+                max-width: 630px;
             }
             .grid-contenedor, .segundocontenedor {
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: space-around;
-                margin: 0;
-                padding: 0;
+                justify-content: space-between;
+    
             }
             .articulo, .NuevoArticulo {
-                width: 36%; 
+                width: 38%; 
             }
         }
 
