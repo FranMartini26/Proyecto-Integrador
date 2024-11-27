@@ -6,7 +6,6 @@ fetch('https://dummyjson.com/recipes')
         let grid = document.querySelector(".grid-contenedor");
         let recetas = "";
         let dataRecetas = data;
-
         for (let i = 0; i < 10; i++) {
             let receta = dataRecetas.recipes[i];
             recetas += `
@@ -20,18 +19,6 @@ fetch('https://dummyjson.com/recipes')
         }
         grid.innerHTML = recetas;
 
-        let articles = document.querySelectorAll(".articulo");
-        for (let i = 0; i < articles.length; i++) {
-            articles[i].style.width = "16%";
-            articles[i].style.display = "flex";
-            articles[i].style.flexDirection = "column";
-            articles[i].style.justifyContent = "space-between";
-            articles[i].style.minHeight = "300px";
-            articles[i].style.border = "solid lightgrey"
-            articles[i].style.padding = "7px"
-            articles[i].style.margin = "25px"
-            articles[i].style.borderRadius = "7px"
-        }
 
         let images = document.querySelectorAll(".articulo img");
         for (let i = 0; i < images.length; i++) {
@@ -67,19 +54,6 @@ fetch('https://dummyjson.com/recipes')
                 `;
             }
             newContainer.innerHTML += recetas;
-
-            let NuevoArticle = document.querySelectorAll(".NuevoArticulo");
-            for (let i = 0; i < NuevoArticle.length; i++) {
-                NuevoArticle[i].style.width = "16%";
-                NuevoArticle[i].style.display = "flex";
-                NuevoArticle[i].style.flexDirection = "column";
-                NuevoArticle[i].style.justifyContent = "space-between";
-                NuevoArticle[i].style.minHeight = "300px";
-                NuevoArticle[i].style.border = "solid lightgrey"
-                NuevoArticle[i].style.padding = "7px"
-                NuevoArticle[i].style.margin = "25px"
-                NuevoArticle[i].style.borderRadius = "7px"
-            }
 
             let NuevaImagen = document.querySelectorAll(".NuevaImagen");
             for (let i = 0; i < NuevaImagen.length; i++) {
