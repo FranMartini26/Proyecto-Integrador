@@ -283,6 +283,7 @@ header {
                 flex-direction: column;
                 justify-content: space-around;
                 align-items: flex-start;
+                /* agrandar tamaño de textos en receta */
             }
             .container{
                 max-width: 630px;
