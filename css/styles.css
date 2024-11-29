@@ -410,5 +410,12 @@
                   width: 100%;
                   bottom: 0;
               }
-  
+
+              .titulo123{
+                margin-top: 50px;
+              }
+
+              .seccion-individual{
+                margin-top: 15px;
+              }
           }  
