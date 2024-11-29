@@ -4,9 +4,13 @@
     padding: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Shadows+Into+Light&display=swap');
+
 
 body{
     height: 100%;
+    background-image:url(../image/_.jpeg) ;
+
 }
 .container {
     max-width: 1300px;
@@ -34,7 +38,6 @@ header {
     margin-left: 100px;
 
 }
-
 .lista {
     display: flex;
     gap: 40px;
@@ -58,7 +61,6 @@ header {
     align-items: center; 
     gap: 10px; 
     margin-top: 45px;
-    margin-left: 40px;
 }
 
 .error-message {
@@ -99,14 +101,22 @@ header {
 }
 .articulo , .NuevoArticulo {
     width: 16%; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     min-height: 300px;
     border: solid lightgrey;
     padding: 7px;
     margin: 25px;
     border-radius: 7px;
+    background-color: beige;
+}
+.enlace-articulo {
+    text-decoration: none; 
+    color: black;
+}
+.textos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    color: black;
 }
 
 
@@ -117,30 +127,19 @@ header {
 }
     .carga {
         font-size: 30px;
-        font-weight: bold;
-        text-align: center;
-        background-color: rgb(255,218,158, 0.5);
         width: 150px;
         height: 80px;
-        margin: 20px auto;  
+        margin: 0 auto; 
         color: black;
         font-weight: 100;
         display: flex;
         justify-content: center;
-        border: groove;
+        align-items: center;
+        border: solid black 1px;
+        font-weight: 700;
+        text-align: center;
     }
-.footer-index {
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #b0f2c2;
-    border-top-left-radius: 35px;
-    border-top-right-radius: 55px;
-    height: 30px;
-    margin-top: 32px
-}
-.footer-receta{
+.footer-resto{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -148,21 +147,48 @@ header {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     height: 30px;
-    margin-top: 82px;
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+.footer-Index{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(176, 242, 194, 0.8);
+    border-top-left-radius: 35px;
+    border-top-right-radius: 55px;
+    height: 30px;
+    margin-top: 32px
 }
 
 .banda {
     color: black;
 }
-
+.seccion-invididual{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    margin-top: 25px;
+    
+}
 .access {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 15px;
+}
+.search-results{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    margin-top: 25px;
 }
 
 .access form {
@@ -223,7 +249,6 @@ header {
     margin-left: 70px;
 }
 .seccion-Receta{
-    align-items: center;
     width: 400px;
     height: 640px;
     display: flex;
@@ -235,6 +260,7 @@ header {
     margin: 0 auto;
     margin-top: 25px;
     border-radius: 7px;
+    background-color: beige;
 }
 
 .seccion-Receta span{
@@ -253,7 +279,7 @@ header {
                 height: 80px;
             }
             .formu{
-                margin-top: 60px;
+                margin-top: 42px;
                 margin-right: 0px;
             }
             .comentario{
@@ -269,8 +295,8 @@ header {
         
             .logo {
                 width: 90px; 
-                margin-top: 15px;
                 margin-left: 10px;
+                margin-bottom: 8px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -282,7 +308,7 @@ header {
                 display: flex;
                 gap: 9px; 
                 font-size: 16px; 
-                margin-top: 70px;
+                margin-top: 50px;
         
             }
             .titulo{
@@ -319,6 +345,7 @@ header {
             .search-results{
                 height: 85vh;
             }
+        
         }
 
         

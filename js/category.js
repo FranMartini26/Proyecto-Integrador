@@ -10,36 +10,39 @@ fetch(`https://dummyjson.com/recipes/tag/${tag}`)
     })
     .then(function(data){
         console.log(data.recipes)
-        
-        document.querySelector(".nombre").innerText = `${tag}`
-
-        let grid = document.querySelector(".grid-contenedor");
+        let grid = document.querySelector(".seccion-invididual");
         let recetas = "";
 
         for(let i = 0; i < data.recipes.length; i++){
             let receta = data.recipes[i]
             let article = `
                         <article class="articles">
-                            <img src= ${receta.image} alt=''>
+                            <a href="receta.html?id=${receta.id}" class="link-detalle">
+                            <img class="imagen" src= ${receta.image} alt=''>
+                            <p class="titulo">${tag}</p>
+                            <div class="textos">
                             <p>Título: ${receta.name} </p>
                             <p>Nivel de dificultad: ${receta.difficulty} </p>
-                            <p> <a href="receta.html?id=${receta.id}" class="link-detalle"> Link para ir al detalle </a> </p>
+                            </div>
+                        </a>
                         </article>
                              `
             recetas += article
         }
 
         grid.innerHTML = recetas
-
-        grid.style.display = "flex"
-        grid.style.alignItems = "center"
-        grid.style.flexWrap = "wrap"
-        grid.style.justifyContent = "space-around"
-
-        let imagen = document.querySelectorAll(".grid-contenedor img")
+        let articulo = document.querySelector(".articles")
+        articulo.style.backgroundColor = "beige"
+        articulo.style.height = "500px"
+        let titulo = document.querySelector(".titulo")
+        titulo.style.fontWeight = "bold"
+        titulo.style.fontSize = "30px"
+        titulo.style.marginLeft = "50px"
+        titulo.style.color = "black";
+        let imagen = document.querySelectorAll(".imagen")
         for(let i = 0; i < imagen.length; i++){
             let img = imagen[i]
-            img.style.width = "450px"
+            img.style.width = "100%"
             img.style.borderRadius = "5px"
         }
 
@@ -50,6 +53,12 @@ fetch(`https://dummyjson.com/recipes/tag/${tag}`)
             art.style.padding = "7px"
             art.style.margin = "25px"
             art.style.borderRadius = "7px"
+            art.addEventListener("mouseover", function() {
+                art.style.backgroundColor = "lightgreen";
+            });
+            art.addEventListener("mouseout", function() {
+                art.style.backgroundColor = "beige";
+            });
 
         }
 
