@@ -67,6 +67,7 @@ fetch(`https://dummyjson.com/recipes/search?q=${searchQuery}`)
             titulos.style.textAlign = "center"
             titulos.style.paddingTop = "10px"
             titulos.style.fontSize = "35px"
+            titulos.style.paddingRight = "45px"
     
             let detalle = document.querySelectorAll(".link-detalle")
             for(i = 0; i < detalle.length; i++){
