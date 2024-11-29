@@ -9,26 +9,24 @@ form.addEventListener('submit', function(event) {
 
     let errors = false
 
+    if(!terminos.checked){
+        alert("Tenes que aceptar condiciones");
+        errors = true
+    }
+
     const email = document.querySelector('#email').value;
     if (email === '') {
         emailError.innerText = "Por favor complete el campo";
         errors = true
     } else{
-        errors = false
+        emailError.innerText = ""
     }
     const password = document.querySelector('#password').value;
     if (password === '') {
         passwordError.innerText = "Por favor complete el campo";
         errors = true
     } else{
-        errors = false
-    }
-
-    if(!terminos.checked){
-        alert("Tenes que aceptar condiciones");
-        errors = true
-    } else{
-        errors = false
+        passwordError.innerText = ""
     }
 
     if (!errors) this.submit()
