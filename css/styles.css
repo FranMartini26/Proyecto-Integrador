@@ -270,6 +270,40 @@ header {
     width: 100%;
     
 }
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.formulario{
+    background-color: beige;
+    border: solid lightgray;
+    padding: 20px;
+}
+
+.h2Login{
+    text-align: center;
+}
+
+.access{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+#registerForm{
+    background-color: beige;
+    border: solid lightgray;
+    padding: 20px;
+}
+
+.h2Register{
+    text-align: center;
+}
 @media (max-width: 640px) {
             header {
                 max-width: 100%;

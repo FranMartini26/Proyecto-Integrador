@@ -12,6 +12,8 @@ form.addEventListener('submit', function(event) {
     if(!terminos.checked){
         alert("Tenes que aceptar condiciones");
         errors = true
+    } else {
+        errors = false
     }
 
     const email = document.querySelector('#email').value;
