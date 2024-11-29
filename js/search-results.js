@@ -20,20 +20,22 @@ fetch(`https://dummyjson.com/recipes/search?q=${searchQuery}`)
             <article class = "articles">
                     <a href="receta.html?id=${recipe.id}" class="link-detalle"> 
                     <img class="imagen" src="${recipe.image}" alt="${recipe.name}">
-                    <p class="titulo">${searchQuery}</p>
-                    <p class="n">Name: ${recipe.name}</p>
+                    <p class="titulo1">${searchQuery}</p>
+                    <p class="name">Name: ${recipe.name}</p>
                     </a>    
                 </article>
             `;
 
             resultados.innerHTML = htmlContent;
             
-            let nombre = document.querySelector('.n')
+            let nombre = document.querySelector('.name')
             nombre.style.color = "black";
+            nombre.style.display = "flex"
+            nombre.style.justifyContent = "center"
             let articulo = document.querySelector(".articles")
             articulo.style.backgroundColor = "beige"
             articulo.style.height = "500px"
-            let titulo = document.querySelector(".titulo")
+            let titulo = document.querySelector(".titulo1")
             titulo.style.fontWeight = "bold"
             titulo.style.fontSize = "30px"
             titulo.style.marginLeft = "50px"
@@ -61,7 +63,7 @@ fetch(`https://dummyjson.com/recipes/search?q=${searchQuery}`)
     
             }
     
-            let titulos = document.querySelector(".titulo")
+            let titulos = document.querySelector(".titulo1")
             titulos.style.textAlign = "center"
             titulos.style.paddingTop = "10px"
             titulos.style.fontSize = "35px"

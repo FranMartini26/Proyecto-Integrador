@@ -388,8 +388,12 @@
                   justify-content: space-between;
               }
               .search-results{
-                  height: 85vh;
-              }
+                height: 90vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: flex-start;
+            }
   
               .footer-Index{
                   position: absolute;
@@ -417,5 +421,17 @@
 
               .seccion-individual{
                 margin-top: 15px;
+              }
+
+              .titulo1{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-right: 40px;
+              }
+
+              .articles{
+                
+                
               }
           }  
