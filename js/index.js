@@ -14,7 +14,7 @@ fetch('https://dummyjson.com/recipes')
                 <img src="${receta.image}" alt="">
                 <div class="textos">
                     <p class="nombre">${receta.name}</p>
-                    <p class ="hola">Nivel de dificultad: ${receta.difficulty}</p>
+                    <p>Nivel de dificultad: ${receta.difficulty}</p>
                 </div>
                 </a>
             </article>
@@ -51,14 +51,6 @@ fetch('https://dummyjson.com/recipes')
         let newContainer = document.querySelector(".segundocontenedor");
         let boton = document.querySelector(".carga");
         boton.style.backgroundColor = "beige"; 
-        
-
-        let dificultad = document.querySelector(".hola")
-        for (i=0;i<dificultad.length; i++){
-            dificultad.style.display = "flex"
-            dificultad.style.justifyContent = "flex-start"
-            dificultad.style.alignItems = "flex-end"
-        }
         
         
         boton.addEventListener("mouseover", function() {
