@@ -1,401 +1,414 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Shadows+Into+Light&display=swap');
-
-
-body{
-    height: 100%;
-    background-image:url(../image/_.jpeg) ;
-
-}
-.container {
-    max-width: 1300px;
-    margin: 0 auto; 
-    padding: 0;
-}
-
-
-
-header {
-    max-width: 1600px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 10px;
-    background-color: #b0f2c2;
-    padding-right: 10px;
-    padding-left: 10px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', sans-serif;
-    padding-top: 15px;
-}
-
-.logo {
-    width: 100px;
-    margin-left: 160px;
-
-
-}
-.lista {
-    display: flex;
-    gap: 40px;
-    font-size: 20px;
-    margin-top: 50px;
-}
-
-.lista li {
-    list-style: none;
-    font-weight: bold;
-}
-
-.lista a {
-    text-decoration: none;
-    color: black;
-}
-
-.formu {
-    display: flex;
-    flex-direction: row; 
-    align-items: center; 
-    gap: 10px; 
-    margin-top: 45px;
-}
-
-.error-message {
-    color: red;
-    display: none; 
-    margin-top: 5px; 
-    font-size: 14px; 
-}
-
-
-.enviar {
-    margin-top: 4px; 
-    padding: 4px;
-    
-}
-
-.titulo {
-    font-size: 60px;
-    margin: 20px 20px;
-    display: flex;
-    justify-content: center;
-    margin-right: 60px;
-    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    font-weight: 300;
-
-}
-
-.grid-contt{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.grid-contenedor {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.articulo , .NuevoArticulo {
-    width: 16%; 
-    min-height: 300px;
-    border: solid lightgrey;
-    padding: 7px;
-    margin: 25px;
-    border-radius: 7px;
-    background-color: beige;
-}
-.enlace-articulo {
-    text-decoration: none; 
-    color: black;
-}
-.textos{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 80px;
-    color: black;
-}
-
-
-.segundocontenedor{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-    .carga {
-        font-size: 30px;
-        width: 150px;
-        height: 80px;
-        margin: 0 auto; 
-        color: black;
-        font-weight: 100;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: solid black 1px;
-        font-weight: 700;
-        text-align: center;
-    }
-.footer-resto{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(176, 242, 194, 0.8);
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    height: 30px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-.footer-Index{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(176, 242, 194, 0.8);
-    border-top-left-radius: 35px;
-    border-top-right-radius: 55px;
-    height: 30px;
-    margin-top: 32px
-}
-
-.banda {
-    color: black;
-}
-.seccion-invididual{
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: 0 auto;
-    margin-top: 25px;
-    
-}
-.access {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 15px;
-}
-.search-results{
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: 0 auto;
-    margin-top: 25px;
-}
-
-.access form {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-}
-
-.access input, .access button {
-    padding: 10px;
-    margin: 10px 0;
-}
-
-.access button {
-    background-color: darkgreen;
-    color: #fff;
-    text-transform: uppercase;
-    border: 1px solid darkgreen;
-
-}
-
-.login {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 15px;
-}
-
-.login form {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-}
-
-.login input, .login button {
-    padding: 10px;
-    margin: 10px 0;
-}
-
-.login button {
-    background-color: darkgreen;
-    color: #fff;
-    text-transform: uppercase;
-    border: 1px solid darkgreen;
-}
-
-.noTengoCuenta{
-    text-decoration: none;
-    color: black;
-}
-
-.tengoCuenta{
-    text-decoration: none;
-    color: black;
-}
-.Name-Receta{
-
-    margin-left: 70px;
-}
-.seccion-Receta{
-    width: 400px;
-    height: 640px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    border: solid lightgrey;
-    padding: 7px;
-    margin: 0 auto;
-    margin-top: 25px;
-    border-radius: 7px;
-    background-color: beige;
-}
-
-.seccion-Receta span{
-    font-weight: 700;
-}
-.foto-Receta{
-    width: 100%;
-    
-}
-
-.login{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-}
-
-.formulario{
-    background-color: beige;
-    border: solid lightgray;
-    padding: 20px;
-}
-
-.h2Login{
-    text-align: center;
-}
-
-.access{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-}
-
-#registerForm{
-    background-color: beige;
-    border: solid lightgray;
-    padding: 20px;
-}
-
-.h2Register{
-    text-align: center;
-}
-@media (max-width: 640px) {
-            header {
-                max-width: 100%;
-                display: flex;
-                justify-content: space-between; 
-                flex-direction: row; 
-                height: 80px;
-            }
-            .formu{
-                margin-top: 42px;
-                margin-right: 0px;
-            }
-            .comentario{
-                width: 130px;
-                height: 25px;
-            }
-            .enviar{
-                display: flex;
-                align-items: center;
-                height: 20px;
-                margin-left: -4px;
-            }
-        
-            .logo {
-                width: 90px; 
-                margin-left: 10px;
-                margin-bottom: 8px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-    
-            }
-        
-            .lista {
-                display: flex;
-                gap: 9px; 
-                font-size: 16px; 
-                margin-top: 50px;
-        
-            }
-            .titulo{
-                font-size: 50px;
-                display: flex;
-                justify-content: center;
-                margin: 0 auto;
-            }
-            .seccion-Receta{
-                height: 830px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                align-items: flex-start;
-            }
-            .container{
-                max-width: 630px;
-            }
-            .grid-contenedor, .segundocontenedor {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-    
-            }
-            .articulo, .NuevoArticulo {
-                width: 38%; 
-            }
-            .grid-contt{
-                height: 80vh;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-            }
-            .search-results{
-                height: 85vh;
-            }
-        
-        }
-
-        
-   
+.rubik-uniquifier {
+    font-family: "Rubik", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+  }
   
-
-
-
-
-
-
-
-
-
-
-
-
+  * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Rubik", serif;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Shadows+Into+Light&display=swap');
+  
+  
+  body{
+      height: 100%;
+      background-image:url(../image/_.jpeg) ;
+      position: relative;
+  
+  }
+  .container {
+      max-width: 1300px;
+      margin: 0 auto; 
+      padding: 0;
+  }
+  
+  
+  
+  header {
+      max-width: 1600px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 10px;
+      background-color: #b0f2c2;
+      padding-right: 10px;
+      padding-left: 10px;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', sans-serif;
+      padding-top: 15px;
+  }
+  
+  .logo {
+      width: 100px;
+      margin-left: 160px;
+  
+  
+  }
+  .lista {
+      display: flex;
+      gap: 40px;
+      font-size: 20px;
+      margin-top: 50px;
+  }
+  
+  .lista li {
+      list-style: none;
+      font-weight: 200;
+  }
+  
+  .lista a {
+      text-decoration: none;
+      color: black;
+  }
+  
+  .formu {
+      display: flex;
+      flex-direction: row; 
+      align-items: center; 
+      gap: 10px; 
+      margin-top: 45px;
+  }
+  
+  .error-message {
+      color: red;
+      display: none; 
+      margin-top: 5px; 
+      font-size: 14px; 
+  }
+  
+  
+  .enviar {
+      margin-top: 4px; 
+      padding: 4px;
+      
+  }
+  
+  .titulo {
+      font-size: 60px;
+      margin: 20px 20px;
+      display: flex;
+      justify-content: center;
+      margin-right: 60px;
+      font-family: "Rubik", serif;
+      font-weight: 300;
+  
+  }
+  
+  .grid-contt{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+  
+  .grid-contenedor {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+  .articulo , .NuevoArticulo {
+      width: 16%; 
+      min-height: 300px;
+      border: solid lightgrey;
+      padding: 7px;
+      margin: 25px;
+      border-radius: 7px;
+      background-color: beige;
+  }
+  .enlace-articulo {
+      text-decoration: none; 
+      color: black;
+  }
+  .textos{
+      display: flex;
+      flex-direction: column;
+      gap: 20px; 
+      color: black;
+  }
+  
+  
+  .segundocontenedor{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+      .carga {
+          font-size: 30px;
+          width: 150px;
+          height: 80px;
+          margin: 0 auto; 
+          color: black;
+          font-weight: 100;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: solid black 1px;
+          font-weight: 700;
+          text-align: center;
+      }
+  .footer-resto{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgb(176, 242, 194, 0.8);
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+      height: 30px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+  }
+  .footer-Index{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgb(176, 242, 194, 0.8);
+      border-top-left-radius: 35px;
+      border-top-right-radius: 55px;
+      height: 30px;
+      margin-top: 32px;
+      
+  }
+  
+  .banda {
+      color: black;
+  }
+  .seccion-invididual{
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin: 0 auto;
+      margin-top: 25px;
+      
+  }
+  .access {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 15px;
+  }
+  .search-results{
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin: 0 auto;
+      margin-top: 25px;
+  }
+  
+  .access form {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+  }
+  
+  .access input, .access button {
+      padding: 10px;
+      margin: 10px 0;
+  }
+  
+  .access button {
+      background-color: darkgreen;
+      color: #fff;
+      text-transform: uppercase;
+      border: 1px solid darkgreen;
+  
+  }
+  
+  .login {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 15px;
+  }
+  
+  .login form {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+  }
+  
+  .login input, .login button {
+      padding: 10px;
+      margin: 10px 0;
+  }
+  
+  .login button {
+      background-color: darkgreen;
+      color: #fff;
+      text-transform: uppercase;
+      border: 1px solid darkgreen;
+  }
+  
+  .noTengoCuenta{
+      text-decoration: none;
+      color: black;
+  }
+  
+  .tengoCuenta{
+      text-decoration: none;
+      color: black;
+  }
+  .Name-Receta{
+  
+      margin-left: 70px;
+  }
+  .seccion-Receta{
+      width: 400px;
+      height: 640px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      border: solid lightgrey;
+      padding: 7px;
+      margin: 0 auto;
+      margin-top: 25px;
+      border-radius: 7px;
+      background-color: beige;
+  }
+  
+  .seccion-Receta span{
+      font-weight: 700;
+  }
+  .foto-Receta{
+      width: 100%;
+      
+  }
+  
+  .login{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+  }
+  
+  .formulario{
+      background-color: beige;
+      border: solid lightgray;
+      padding: 20px;
+  }
+  
+  .h2Login{
+      text-align: center;
+  }
+  
+  .access{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+  }
+  
+  #registerForm{
+      background-color: beige;
+      border: solid lightgray;
+      padding: 20px;
+  }
+  
+  .h2Register{
+      text-align: center;
+  }
+  @media (max-width: 640px) {
+              header {
+                  max-width: 100%;
+                  display: flex;
+                  justify-content: space-between; 
+                  flex-direction: row; 
+                  height: 80px;
+              }
+              .formu{
+                  margin-top: 42px;
+                  margin-right: 0px;
+              }
+              .comentario{
+                  width: 130px;
+                  height: 25px;
+              }
+              .enviar{
+                  display: flex;
+                  align-items: center;
+                  height: 20px;
+                  margin-left: -4px;
+              }
+          
+              .logo {
+                  width: 90px; 
+                  margin-left: 10px;
+                  margin-bottom: 8px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+  
+      
+              }
+          
+              .lista {
+                  display: flex;
+                  gap: 9px; 
+                  font-size: 16px; 
+                  margin-top: 50px;
+          
+              }
+              .titulo{
+                  font-size: 50px;
+                  display: flex;
+                  justify-content: center;
+                  margin: 0 auto;
+              }
+              .seccion-Receta{
+                  height: 830px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-around;
+                  align-items: flex-start;
+              }
+              .container{
+                  max-width: 630px;
+              }
+              .grid-contenedor, .segundocontenedor {
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: space-between;
+      
+              }
+              .articulo, .NuevoArticulo {
+                  width: 38%; 
+              }
+              .grid-contt{
+                  height: 80vh;
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: space-between;
+              }
+              .search-results{
+                  height: 85vh;
+              }
+  
+              .footer-Index{
+                  position: absolute;
+                  width: 100%;
+                  bottom: 0;
+              }
+  
+              .seccion-individual{
+                  margin-top: 100px;
+              }
+          
+              .body{
+                  position: relative;
+              }
+  
+              .footer-Index{
+                  position: absolute;
+                  width: 100%;
+                  bottom: 0;
+              }
+  
+          }  
