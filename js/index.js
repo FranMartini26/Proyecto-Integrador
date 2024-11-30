@@ -14,7 +14,7 @@ fetch('https://dummyjson.com/recipes')
                 <img src="${receta.image}" alt="">
                 <div class="textos">
                     <p class="nombre">${receta.name}</p>
-                    <p>Nivel de dificultad: ${receta.difficulty}</p>
+                    <p class="dificultad">Nivel de dificultad:<br> ${receta.difficulty}</p>
                 </div>
                 </a>
             </article>

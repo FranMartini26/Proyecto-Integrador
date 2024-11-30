@@ -17,24 +17,30 @@ fetch(`https://dummyjson.com/recipes/search?q=${searchQuery}`)
             let recipe = data.recipes[0]; 
 
             let htmlContent = `
-            <article class = "articles">
+            <article class = "Articulo-search">
                     <a href="receta.html?id=${recipe.id}" class="link-detalle"> 
                     <img class="imagen" src="${recipe.image}" alt="${recipe.name}">
                     <p class="titulo1">${searchQuery}</p>
-                    <p class="name">Name: ${recipe.name}</p>
+                    <p class="name">Titulo: ${recipe.name}</p>
                     </a>    
                 </article>
             `;
 
             resultados.innerHTML = htmlContent;
             
+            resultados.style.display = "flex"
+            resultados.style.alignItems = "center"
+            resultados.style.flexWrap = "wrap"
+            resultados.style.justifyContent = "space-between"
             let nombre = document.querySelector('.name')
             nombre.style.color = "black";
             nombre.style.display = "flex"
             nombre.style.justifyContent = "center"
-            let articulo = document.querySelector(".articles")
+            let articulo = document.querySelector(".Articulo-search")
             articulo.style.backgroundColor = "beige"
-            articulo.style.height = "500px"
+            articulo.style.height = "540px"
+            articulo.style.width = "450px"
+            articulo.style.marginRight = "50px"
             let titulo = document.querySelector(".titulo1")
             titulo.style.fontWeight = "bold"
             titulo.style.fontSize = "30px"
@@ -47,13 +53,10 @@ fetch(`https://dummyjson.com/recipes/search?q=${searchQuery}`)
                 img.style.borderRadius = "5px"
             }
     
-            let articles = document.querySelectorAll(".articles")
+            let articles = document.querySelectorAll(".Articulo-search")
             for(i = 0; i < articles.length; i++){
                 let art = articles[i]
-                art.style.border = "solid lightgrey"
-                art.style.padding = "7px"
-                art.style.margin = "25px"
-                art.style.borderRadius = "7px"
+            
                 art.addEventListener("mouseover", function() {
                     art.style.backgroundColor = "lightgreen";
                 });

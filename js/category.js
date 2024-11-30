@@ -61,7 +61,8 @@ fetch(`https://dummyjson.com/recipes/tag/${tag}`)
             let art = articles[i]
             art.style.border = "solid lightgrey"
             art.style.padding = "15px"
-            art.style.margin = "50px"
+            art.style.margin = "20px"
+            art.style.marginBottom = "50px"
             art.style.borderRadius = "7px"
             art.style.backgroundColor = "beige"
             art.style.height = "540px"
@@ -77,7 +78,7 @@ fetch(`https://dummyjson.com/recipes/tag/${tag}`)
 
         let nombre = document.querySelector(".nombre")
         nombre.style.textAlign = "center"
-        nombre.style.paddingTop = "10px"
+        nombre.style.marginTop = "40px"
         nombre.style.fontSize = "50px"
 
         let detalle = document.querySelectorAll(".link-detalle")
