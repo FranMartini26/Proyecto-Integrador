@@ -36,8 +36,7 @@ fetch('https://dummyjson.com/recipes')
         for (let i = 0; i < articles.length; i++) {
             let blanco = articles[i].querySelector("a"); 
             if (blanco) {
-                blanco.style.color = "black"; 
-                blanco.style.textDecoration = "none";
+           
             
                 articles[i].addEventListener("mouseover", function() {
                     articles[i].style.backgroundColor = "lightgreen"; 
